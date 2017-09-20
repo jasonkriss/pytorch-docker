@@ -3,7 +3,8 @@ RUN pip install ipykernel \
   jupyter \
   matplotlib \
   pandas \
-  visdom
+  visdom \
+  lmdb
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run.sh /
 EXPOSE 8888
