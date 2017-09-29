@@ -1,10 +1,11 @@
 FROM pytorch/pytorch
-RUN pip install ipykernel \
+RUN pip install  --process-dependency-links ipykernel \
   jupyter \
   matplotlib \
   pandas \
   visdom \
-  lmdb
+  lmdb \
+  detonator
 COPY jupyter_notebook_config.py /root/.jupyter/
 COPY run.sh /
 EXPOSE 8888
