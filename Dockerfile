@@ -1,4 +1,4 @@
-FROM pytorch/pytorch
+FROM jasonkriss/pytorch-base
 RUN pip install  --process-dependency-links ipykernel \
   jupyter \
   matplotlib \
